@@ -1,0 +1,80 @@
+<!-- <resources>
+    <string name="app_name">TrainAdvisor</string>
+</resources> -->
+
+<resources>
+    <string name="app_name">TrainAdvisor</string>
+
+    <string-array name="allStations">
+        <item>Botanic Gardens (DT9)</item>
+        <item>Stevens (DT10)</item>
+        <item>Newton (DT11)</item>
+        <item>Bishan (CC15)</item>
+        <item>Marymount (CC16)</item>
+        <item>Caldecott (CC17)</item>
+        <item>Botanic Gardens (CC19)</item>
+        <item>Newton (NS21)</item>
+        <item>Novena (NS20)</item>
+        <item>Toa Payoh (NS19)</item>
+        <item>Braddell (NS18)</item>
+        <item>Bishan (NS17)</item>
+    </string-array>
+
+    <string-array name="downtownLine">
+        <item>Botanic Gardens (DT9)</item>
+        <item>Stevens (DT10)</item>
+        <item>Newton (DT11)</item>
+    </string-array>
+
+    <string-array name="circleLine">
+        <item>Bishan (CC15)</item>
+        <item>Marymount (CC16)</item>
+        <item>Caldecott (CC17)</item>
+        <item>Botanic Gardens (CC19)</item>
+    </string-array>
+
+    <string-array name="northSouthLine">
+        <item>Newton (NS21)</item>
+        <item>Novena (NS20)</item>
+        <item>Toa Payoh (NS19)</item>
+        <item>Braddell (NS18)</item>
+        <item>Bishan (NS17)</item>
+    </string-array>
+
+    <string-array name="downtownLineDirection">
+        <item>To Changi Airport</item> <!-- Forwards -->
+        <item>To Bukit Panjang</item> <!-- Backwards -->
+    </string-array>
+
+    <string-array name="circleLineDirection">
+        <item>To HabourFront</item> <!-- Forwards -->
+        <item>To Dhoby Ghaut</item> <!-- Backwards -->
+    </string-array>
+
+    <string-array name="northSouthLineDirection">
+        <item>To Pasir Ris</item> <!-- Forwards -->
+        <item>To Jurong East</item> <!-- Backwards -->
+    </string-array>
+
+    <string-array name="downtownLineStations">
+        <item>Botanic Gardens (DT9)</item>
+        <item>Stevens (DT10)</item>
+        <item>Newton (DT11)</item>
+    </string-array>
+
+    <string-array name="circleLineStations">
+        <item>Bishan (CC15)</item>
+        <item>Marymount (CC16)</item>
+        <item>Caldecott (CC17)</item>
+        <item>Botanic Gardens (CC19)</item>
+    </string-array>
+
+    <string-array name="northSouthLineStations">
+        <item>Bishan (NS17)</item>
+        <item>Braddell (NS18)</item>
+        <item>Toa Payoh (NS19)</item>
+        <item>Novena (NS20)</item>
+        <item>Newton (NS21)</item>
+    </string-array>
+
+</resources>

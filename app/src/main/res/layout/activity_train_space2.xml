@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainSpaceActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:background="#FAFAFA"
+        tools:context=".AdvisePage">
+
+        <ImageButton
+            android:id="@+id/cabinExitImgBtn"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            app:tint="#000000" />
+
+        <TextView
+            android:id="@+id/cabinTitleTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Cabins"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cabinExitImgBtn" />
+
+        <AutoCompleteTextView
+            android:id="@+id/selectStationAutoTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_edit_text"
+            android:backgroundTint="#E8E8E8"
+            android:completionThreshold="1"
+            android:drawableStart="?android:attr/actionModeWebSearchDrawable"
+            android:drawablePadding="10dp"
+            android:elevation="100dp"
+            android:fontFamily="@font/montserrat"
+            android:hint="Select a station"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:textColor="#4E4E4E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cabinTitleTxtView" />
+
+        <Spinner
+            android:id="@+id/directionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="220dp"
+            android:background="@drawable/rounded_text_view"
+            android:backgroundTint="#E8E8E8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectStationAutoTxtView" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/NextTrainView"
+            android:layout_width="360dp"
+            android:layout_height="235dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/directionSpinner"
+            app:strokeColor="#46717171"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/nextTrainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Next Train"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/nextTrainCar1Label"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Car 1"
+                android:textAlignment="center"
+                android:textColor="#4E4E4E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cabin1Colour"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_text_view"
+                android:backgroundTint="#E8E8E8"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/nextTrainCar2Label"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Car 2"
+                android:textAlignment="center"
+                android:textColor="#4E4E4E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cabin2Colour"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_text_view"
+                android:backgroundTint="#E8E8E8"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:id="@+id/followingTrainView"
+            android:layout_width="360dp"
+            android:layout_height="235dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:strokeColor="#46717171"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NextTrainView"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/followingTrainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Following Train"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/followingTrainCar1Label"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="11dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:text="Car 1"
+                android:textAlignment="center"
+                android:textColor="#4E4E4E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cabin3Colour"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_text_view"
+                android:backgroundTint="#E8E8E8"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/followingTrainCar2Label"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:text="Car 2"
+                android:textAlignment="center"
+                android:textColor="#4E4E4E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cabin4Colour"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_text_view"
+                android:backgroundTint="#E8E8E8"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
